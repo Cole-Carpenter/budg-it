@@ -61,7 +61,7 @@ export class HomePage extends Component{
         <div className = "BackGround">
             <span className = "Menu" onClick = {this.routeToManagement}>≡  </span>
             <span className = "Head">budge.it</span>
-            <div className = "Value">{this.state.wallet_sign}${this.state.wallet}</div>
+            <div className = "Value">{this.state.wallet_sign}${Math.abs(this.state.wallet)}</div>
             <div className = "Footer" onClick = {this.placeHolder}>∇</div>
         </div>
         );
